@@ -1,0 +1,116 @@
+ $(".result").on("click", () => {
+        setTimeout( () => {
+            $(".desktopForm").submit();
+        }, 300)
+      });
+      $(".mobileResult").on("click", () => {
+        setTimeout( () => {
+            $(".mobileForm").submit();
+        }, 300)
+      });  
+
+//css
+
+.result{
+        position: absolute;        
+        z-index: 999;
+        top: 100%;
+        left: 0;
+        background: aliceblue;
+        border-radius: 5px;
+        border: 2px solid #CCCCCC;
+    }
+    /* Formatting result items */
+    .result p{
+        margin: 0;
+        padding: 7px 10px;
+        border-top: none;
+        cursor: pointer;
+        color: #000;
+        font-size: 12px;
+    }
+    .result p:hover{
+        background: orange;
+    }
+  .mobileResult p{
+        margin: 0;
+        padding: 7px 10px;
+        border-top: none;
+        cursor: pointer;
+        color: #000;
+        font-size: 12px;
+
+    }
+    .mobileResult p:hover{
+        background: orange;
+    }
+    .mobileResult{
+        position: absolute;
+        background: aliceblue;
+        border-radius: 5px;
+        border: 2px solid #CCCCCC;
+        z-index: 999;
+    }
+
+//java script
+$(document).ready(function(){
+    $('#search').on("keyup", function(){
+        /* Get input value on change */
+        var inputVal = $(this).val();
+        var resultDropdown = $(this).siblings(".result");
+        if(inputVal.length){
+            $.get("search.php", {term: inputVal}).done(function(data){
+                // Display the returned data in browser
+                resultDropdown.html(data);
+            });
+        } else{
+            resultDropdown.empty();
+        }
+    });
+    
+    // Set search input value on click of result item
+    $(document).on("click", ".result p", function(){
+        $(this).parents(".search-box").find('input[type="search"]').val($(this).text());
+        $(this).parent(".result").empty();
+    });
+    //mobile search
+        $('#mobileSearch').on("keyup", function(){
+        /* Get input value on change */
+        var inputVal = $(this).val();
+        var resultDropdown = $(this).siblings(".mobileResult");
+        if(inputVal.length){
+            $.get("search.php", {term: inputVal}).done(function(data){
+                // Display the returned data in browser
+                resultDropdown.html(data);
+            });
+        } else{
+            resultDropdown.empty();
+        }
+    });
+    
+    // Set search input value on click of result item
+    $(document).on("click", ".mobileResult p", function(){
+        $(this).parents(".search-box").find('input[type="search"]').val($(this).text());
+        $(this).parent(".mobileResult").empty();
+    });
+    //submit the form
+     $(".result").on("click", function(){
+        setTimeout( () => {
+            $(".desktopForm").submit();
+        }, 300)
+      });
+      $(".mobileResult").on("click", () => {
+        setTimeout( function() {
+            $(".mobileForm").submit();
+        }, 300)
+      }); 
+});
+
+//admin
+//staff
+//login
+//server
+//online//both script and table
+//logout
+//db
+//live.js (change the class of the form and results div for mobile view

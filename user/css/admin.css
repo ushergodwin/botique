@@ -1,0 +1,64 @@
+a{
+    color: aliceblue;
+}
+#admin_bar{
+    display: block;
+    width: 250px;
+}
+#item{
+    padding-left: 10px;
+}
+.status{
+    width: 200px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#mystatus{
+    padding: 10px;
+}
+span{
+    border-radius: 5px;
+    border: 2px solid green;
+}
+#canc{
+    border-radius: 5px;
+    border: 2px solid red;
+        }
+.status{
+    width: 400px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+        border-bottom-color: green;
+} .email,.status:focus-within{
+    outline: none;
+        } #mystatus{
+    padding: 10px;
+}.email{     width: 400px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: blue;
+}
+#saveprofile{
+    display: none;
+} 
+input[type=text]:focus{
+    outline: none;
+} 
+input[type=password]{
+    border-right: none;
+    border-top: none;
+    border-left: none; 
+    border-bottom-color: green;
+}
+input[type=password]:focus{
+    outline: none;
+} 
+#password,#saveaddress{
+    display: none;
+} 
+#track,#order{
+    display: none;
+} 

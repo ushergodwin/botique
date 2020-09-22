@@ -1,0 +1,21 @@
+#saveprofile{
+    display: none;
+} 
+input[type=text]:focus{
+    outline: none;
+} 
+input[type=password]{
+    border-right: none;
+    border-top: none;
+    border-left: none; 
+    border-bottom-color: green;
+}
+input[type=password]:focus{
+    outline: none;
+} 
+#password,#saveaddress{
+    display: none;
+} 
+#track,#order{
+    display: none;
+} 

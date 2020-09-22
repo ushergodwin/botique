@@ -1,0 +1,97 @@
+        .chat{
+            border: 2px solid grey;
+            border-radius: 5px;
+            width: 600px;
+           
+        }
+        .chat-header{
+            display: inline-flex;
+            
+        }
+        textarea{
+            
+        }
+        .user-chat{
+            background: lightgreen;
+            text-align: left;
+            border: 2px solid lightgreen;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: 600;
+            top: 20px;
+            
+        }
+         .admin-chat{
+            background: orange;
+             text-align: right;
+             
+             border: 2px solid orange;
+             border-radius: 5px;
+             font-size: 18px;
+            font-weight: 600;
+             
+            
+        }
+        #adminTyping{
+            text-align: right;
+        }
+        .name{
+            border: 2px solid orange;
+            border-radius: 5px;
+            background: green;
+            color: aliceblue;
+        }
+         .form-control{
+            border-radius: 50px;
+        }
+        .chat-area{
+            position: relative;
+        }
+        .card-body{
+            height: 300px;
+            overflow-y: scroll;
+        }
+          #mobileUserResponse{
+    width: 250px;
+  }
+  #mobileResponse{
+    width: 250px;
+  }
+  #mobileBody{
+    display: inline-flex;
+    padding: 2px;
+  }
+  @media only screen and (max-width: 600px) {
+ .desktop{
+  display: none;
+ }
+  }
+    @media only screen and (min-width: 600px) {
+ .desktop{
+  display: none;
+ }
+  }
+    @media only screen and (min-width: 728px) {
+ .desktop{
+  display: block;
+ }
+ .mobile{
+  display: none;
+ }
+  }
+    @media only screen and (min-width: 992px) {
+ .desktop{
+  display: block;
+ }
+ .mobile{
+  display: none;
+ }
+  }
+    @media only screen and (min-width: 1022px) {
+ .desktop{
+  display: block;
+ }
+ .mobile{
+  display: none;
+ }
+  }

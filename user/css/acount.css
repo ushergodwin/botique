@@ -1,0 +1,23 @@
+#log:hover{
+cursor: pointer;
+font-weight: bold;
+font-size:20px;
+    
+} 
+#log{
+background-color: aliceblue;
+} 
+.header{
+    width: 100%;
+} 
+.control-label, label{
+    color: aliceblue;
+}.card-body{
+    background-image: url(imgs/header.jpg);
+    border-radius: 5px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+        } 
+.card-footer{
+    color: aliceblue;
+}

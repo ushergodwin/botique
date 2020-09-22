@@ -1,0 +1,49 @@
+.sidebar{position: fixed; left: 0; transition-timing-function: ease-in; background-color: aliceblue; height: 100%; display: inline;
+        animation-name: show; animation-duration: 1s; animation-timing-function: ease-out; padding: 10px; z-index: 1;
+        overflow: scroll;
+        }
+        @keyframes show{
+            from {width: 0px;}
+            to {width: 250px;}
+        }   
+        @keyframes hidden{
+            from {width: 0px;}
+            to {width: 250px;}
+        }
+        #hidden{display: none; animation: hidden 1s ease-out}
+        .closebtn{font-size: 35px; position: relative; color: black; margin-left: 100px;}
+        .closebtn:hover{cursor: pointer; color: red}
+        ul{list-style: none; left: 0;}
+        a{color: black}
+        a:hover{color: darkgray} 
+        #ser{display: none} #form{display: none}
+        #up{margin-left: 100px}
+.showcat,.menlist,.womenlist,.chlist{display: none;}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: dimgrey;
+  color: white;
+  text-align: center;
+            width: 250px;
+}
+#top_nav{background-color: rgba(0,0,0,1);} #top_nav a{color: aliceblue} #top_nav a:hover{text-decoration-color: orange; text-decoration: underline} #mobile_nav{background-color: rgba(0,0,0,1);} #mobile_nav a{color: aliceblue} #mobile_nav a:hover{text-decoration-color: orange; text-decoration: underline} #card{width: 350px;} #cart_count{border: 2px solid orange; border-radius: 50%; background-color: orange; color: white; position: absolute;
+    width: 18px;
+    height: 13px;
+    padding-bottom: 20px;
+    padding-right: 20px; top: 5px; margin-left: 10px; font-size: 15px; text-align: center;} #dropdown-link a{color: black} #mobile_nav{width: 100%} #card-call a:hover{text-decoration: none}.fa-phone-alt{background-color: orange; color: aliceblue; font-size: 20pt; border: 2px solid orange; border-radius: 50%;} #card-call a{font-weight: 600} .fa-money-check-alt{font-size: 20pt; background-color: orange; color: aliceblue; border: 2px solid orange; border-radius: 5px;} .fa-check-circle{background-color: orange; color: green; font-size: 20pt;border: 2px solid orange; border-radius: 50%;} #dropdown-link a:hover{text-decoration: none}
+        #tablets_nav a{color: aliceblue} #tablets_nav a:hover{text-decoration-color: orange; text-decoration: underline} #tablets_nav{background-color: rgba(0,0,0,1);}
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) { #top_nav{display: none}#desktop_view{display: none} #tablets_nav{display: none} }
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) { #top_nav{display: none}#desktop_view{display: none} #tablets_nav{display: none}  }
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {#tablets_nav{display: inline-flex; width: 100%}  #mobile_nav{display: none}#desktop_view{display: none}#top_nav{display: none} }
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {#tablets_nav{display: none} #mobile_nav{display: none}#top_nav{display: inline-flex; width: 100%}#desktop_view{display: inline-flex} #mobile_view{display: none}   }
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {#mobile_nav{display: none} #top_nav{display: inline-flex; width: 100%} #desktop_view{display: inline-flex} #mobile_view{display: none} #tablets_nav{display: none} }#description:hover{text-decoration: none}.card-size{max-width: 250px;} #login{color: orange} #dropdown2-link a{color: orange}
+        
+#mobileSearch{border-radius: 50px; border-top-right-radius: 1px; border-bottom-right-radius: 1px;}
